@@ -1,0 +1,13 @@
+<html>
+<head>
+<h2> FFORMATEO DE TEXTOS </h2>
+</head>
+<p><b> Este es un texto en negritas </p></b>
+<p><i> Este es un texto en cursiva </p></i>
+<p><br> Este es un salto de linea </br></p>
+<p><hr> Este es una linea horizontal </p></hr>
+>a herf="https://www.google.com
+</h1>
+</i>
+ </b>
+</h2>
