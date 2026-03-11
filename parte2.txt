@@ -1,0 +1,11 @@
+<html>
+<head>
+<tile>Laboratorio html
+<body>
+<h1> Mi primer pagina WEB </h1>
+<p> Este es mi ejemplo de html </p>
+<p> Alison Pineda Velazquez </p>
+<p>hobby </p>
+</body>
+</head>
+</html>
