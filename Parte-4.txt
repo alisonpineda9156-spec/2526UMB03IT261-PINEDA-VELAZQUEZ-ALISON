@@ -1,0 +1,29 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios HTML - Parte 4</title>
+</head>
+<body>
+
+    <h1>Ejercicios HTML - Parte 4</h1>
+
+    <ol>
+        <li>Enlace a Google: <a href="https://www.google.com">Ir a Google.com</a></li>
+        <li>Enlace a YouTube: <a href="https://www.youtube.com">Ir a YouTube</a></li>
+        <li>Enlace interno: <a href="pagina_interna.html">Ir a Página interna</a></li>
+
+        <li>Imagen local: <br>
+            <img src="imagen_local.jpg" width="300" alt="Mi imagen local">
+        </li>
+
+        <li>Imagen de internet: <br>
+            <img src="https://picsum.photos/300" width="300" alt="Imagen de internet">
+        </li>
+
+        <li>Cambiar tamaño de imagen con atributos "width" y "height": <br>
+            <img src="imagen_local.jpg" width="150" height="150" alt="Imagen redimensionada">
+        </li>
+    </ol>
+
+</body>
+</html>
