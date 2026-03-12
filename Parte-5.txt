@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Mi Práctica</title>
+</head>
+<body>
+
+    <hr> <h3>Información de Alumnos</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Carrera</th>
+                <th>Semestre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alison Pineda Velazquez</td>
+                <td>TICS </td>
+                <td>6to</td>
+            </tr>
+            <tr>
+                <td>Ronny Abdiel </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td>WEB </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> 261 </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <h3>Mis 3 Comidas Favoritas</h3>
+    <ol>
+        <li> Quesadillas </li>
+        <li> Pambazos </li>
+        <li> Enchiladas</li>
+    </ol>
+
+    <br>
+
+    <h3>Lugares que me gustaría conocer</h3>
+    <ul>
+        <li> Tokio</li>
+        <li> Alemania </li>
+        <li> Brazil/li>
+    </ul>
+
+</body>
+</html>
