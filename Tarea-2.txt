@@ -1,0 +1,38 @@
+<html>
+ 
+<table width="500" height="300" border="1">
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td>
+  </tr>
+</table>
+
+</html>
+<htnl>
+<head>
+<body>
+     <h1>Hola mundo</h1>
+     <hr/>
+     <p><em> Bienvenido</em> a mi <strong> primera</strong>
+        <br> pagina WEB</p>
+        <a href="https:77www.google.com"> ir a google</a>
+        <br>
+        <a href="file:///C:/Users/Alumno.DESKTOP-E86FTMB/Desktop/alison.html"> ir a clase 1</a>
+
+        <a href="paisaje.jpg">
+        <img src="https://sl.bing.net/ke98VUmnPqK"  alt="descripcion de imagen"/>
+        <img src="paisaje.jpg">
+
+</body>
+</html>
