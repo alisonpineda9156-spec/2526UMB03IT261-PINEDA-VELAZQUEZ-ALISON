@@ -35,4 +35,5 @@
         <img src="paisaje.jpg">
 
 </body>
+<!-- Estructura HTML incorrecta 8 -->
 </html>
