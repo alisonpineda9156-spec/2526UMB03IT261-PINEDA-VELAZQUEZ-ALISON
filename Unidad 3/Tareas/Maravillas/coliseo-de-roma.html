@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coliseo de Roma</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="coliseo.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-light shadow-sm">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="#">Maravillas</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="Maravillas.html">Inicio</a>
+        </li>
+      </ul>
+
+      <form class="d-flex" onsubmit="buscar(event)">
+        <input id="busqueda" class="form-control me-2" type="search" placeholder="Buscar">
+        <button class="btn btn-outline-success">Buscar</button>
+      </form>
+
+    </div>
+
+  </div>
+</nav>
+
+<div class="container py-5 mt-4">
+
+  <div class="text-center mb-5">
+    <h1 class="fw-bold display-4">🏛️ Coliseo de Roma</h1>
+    <p class="lead">Una de las 7 Maravillas del Mundo</p>
+  </div>
+
+  <div class="card shadow mb-4 p-3">
+    <p>
+      El Coliseo Romano, originalmente conocido como Anfiteatro Flavio, es un imponente anfiteatro del siglo I d.C. 
+      ubicado en Roma, Italia. Fue el más grande del Imperio Romano, con capacidad para más de 50,000 espectadores, 
+      y se utilizaba para luchas de gladiadores, caza de animales y espectáculos públicos. 
+    </p>
+  </div>
+
+  <div class="row g-4">
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card p-3">
+        <h5 class="card-title"> Construcción</h5>
+        <p>Iniciado bajo el emperador Vespasiano en el año 72 d.C.
+           y completado por su hijo Tito en el 80 d.C., con un cuarto nivel añadido posteriormente.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card p-3">
+        <h5 class="card-title">Arquitectura</h5>
+        <p>Estructura ovalada de 189 metros de largo, 156 metros de ancho y casi 
+          50 metros de altura. Construido con piedra travertina, hormigón y ladrillo.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card p-3">
+        <h5 class="card-title">Estructura interna</h5>
+        <p>Contaba con la arena (escenario de madera cubierto de arena) y el hipogeo 
+          (red subterránea de túneles y celdas para gladiadores y animales).</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h5 class="card-title"> Aforo</h5>
+        <p>Capacidad para más de 65,000 espectadores, 
+          organizados en la cávea (gradas) según su clase social.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h5 class="card-title">Capacidad</h5>
+        <p>El Coliseo tenía una capacidad de aproximadamente 50,000 a 70,000 personas.</p>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="card p-3">
+        <h5 class="card-title">Curiosidades</h5>
+        <p>Podía inundarse para realizar simulacros de batallas navales (naumaquias). 
+          Su nombre proviene del "Coloso de Nerón", una estatua gigante que estaba cerca.</p>
+      </div><br>
+    </div>
+    
+    <div class="col-6 text-center" style="margin: 0 auto;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm2JdmswgDgFNMwqhTmrVzitC0g2ub3QD9_-bJD43NQyrK7hOrNMCjQts&s=10" class="img-fluid rounded" alt="Coliseo de Roma">
+    </div>
+  </div>
+
+</div>
+
+
+
+<script>
+function buscar(event) {
+  event.preventDefault();
+
+  let texto = document.getElementById("busqueda").value.toLowerCase().trim();
+
+  if (texto === "chichén itzá" || texto === "chichen itza") {
+    window.location.href = "chichen-itza.html";
+  } else if (texto === "coliseo de roma") {
+    window.location.href = "coliseo-de-roma.html";
+  } else if (texto === "cristo redentor") {
+    window.location.href = "estatua-del-cristo-redentor.html";
+  } else if (texto === "gran muralla china") {
+    window.location.href = "gran-muralla-china.html";
+  } else if (texto === "machu picchu") {
+    window.location.href = "machu-picchu.html";
+  } else if (texto === "petra") {
+    window.location.href = "petra.html";
+  } else if (texto === "taj mahal") {
+    window.location.href = "taj-mahal.html";
+  } else {
+    alert("No se encontró la maravilla 😢");
+  }
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

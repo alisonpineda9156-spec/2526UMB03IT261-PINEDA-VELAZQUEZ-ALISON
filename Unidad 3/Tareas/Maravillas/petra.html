@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Petra</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="petra.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-light shadow-sm">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="#">Maravillas</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="Maravillas.html">Inicio</a>
+        </li>
+      </ul>
+
+      <form class="d-flex" onsubmit="buscar(event)">
+        <input id="busqueda" class="form-control me-2" type="search" placeholder="Buscar">
+        <button class="btn btn-outline-success">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container py-5 mt-4">
+
+  <div class="text-center mb-5">
+    <h1 class="fw-bold display-4">🏛️ Petra</h1>
+    <p class="lead">Una de las 7 Maravillas del Mundo</p>
+  </div>
+
+  <div class="card shadow mb-4 p-3">
+    <p>Petra es una antigua ciudad nabatea excavada en roca rosada, situada en el suroeste de Jordania entre el Mar Rojo y el Mar Muerto. 
+    Famosa por sus construcciones monumentales como el Tesoro (Al-Khazneh) y el Monasterio (Ad-Deir), fue un próspero cruce de caravanas 
+    comerciales en la antigüedad. Es Patrimonio de la Humanidad por la UNESCO y una de las Nuevas Siete Maravillas del Mundo.</p>
+  </div>
+
+  <div class="row g-4">
+
+    <div class="col-md-6 col-lg-8">
+      <div class="card p-3">
+        <h5 class="card-title"> Historia</h5>
+        <p>  Fundada por los nabateos hacia el siglo VIII a.C., alcanzó su apogeo como centro comercial de especias e incienso antes de ser 
+          anexionada por los romanos en el año 106 d.C.. Fue redescubierta en 1812 por el explorador suizo Johann Ludwig Burckhardt tras siglos 
+          de abandono occidental.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card p-3">
+        <h5 class="card-title">Arquitectura</h5>
+        <p>Destaca por sus fachadas talladas directamente en los acantilados de arenisca, mezclando estilos orientales y helenísticos.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-6">
+      <div class="card p-3">
+        <h5 class="card-title">Ingeniería</h5>
+        <p>Los nabateos construyeron un impresionante sistema de canales, cisternas y tuberías subterráneas que permitía sobrevivir en el entorno desértico.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h5 class="card-title"> Ubicación y Clima</h5>
+        <p>Está en el sur de Jordania, en un valle montañoso. El clima es desértico, requiriendo protección solar y constante hidratación al visitarlo.</p>
+      </div><br>
+    </div>
+    
+    <div class="col-6 text-center" style="margin: 0 auto;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtSS-nx3E4rFDVgciYodEVYO5E7T0IVt3nJxX-3Og5AYJ9dw4ByekMJnY&s=10" class="img-fluid rounded" alt="Petra">
+    </div>
+  </div>
+
+</div>
+
+<script>
+function buscar(event) {
+  event.preventDefault();
+
+  let texto = document.getElementById("busqueda").value.toLowerCase().trim();
+
+  if (texto === "chichén itzá" || texto === "chichen itza") {
+    window.location.href = "chichen-itza.html";
+  } else if (texto === "coliseo de roma") {
+    window.location.href = "coliseo-de-roma.html";
+  } else if (texto === "cristo redentor") {
+    window.location.href = "estatua-del-cristo-redentor.html";
+  } else if (texto === "gran muralla china") {
+    window.location.href = "gran-muralla-china.html";
+  } else if (texto === "machu picchu") {
+    window.location.href = "machu-picchu.html";
+  } else if (texto === "petra") {
+    window.location.href = "petra.html";
+  } else if (texto === "taj mahal") {
+    window.location.href = "taj-mahal.html";
+  } else {
+    alert("No se encontró la maravilla 😢");
+  }
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

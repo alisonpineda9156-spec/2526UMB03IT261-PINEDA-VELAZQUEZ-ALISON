@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chichén Itzá</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="chichen-itza.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-light shadow-sm">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="#">Maravillas</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="Maravillas.html">Inicio</a>
+        </li>
+      </ul>
+
+      <form class="d-flex" onsubmit="buscar(event)">
+        <input id="busqueda" class="form-control me-2" type="search" placeholder="Buscar">
+        <button class="btn btn-outline-success">Buscar</button>
+      </form>
+
+    </div>
+
+  </div>
+</nav>
+
+<div class="container py-5 mt-4">
+
+  <div class="text-center mb-5">
+    <h1 class="fw-bold display-4">🏛️ Chichén Itzá</h1>
+    <p class="lead">Una de las 7 Maravillas del Mundo</p>
+  </div>
+
+  <div class="card shadow mb-4 p-3">
+    <p>
+      Antigua ciudad maya Chichén Itzá, antigua ciudad maya y Patrimonio de la Humanidad (UNESCO, 1988), destaca por la pirámide de Kukulkán,
+    una de las "Nuevas 7 Maravillas del Mundo Moderno" desde 2007. Ubicada en Yucatán, México, fue un poderoso centro político y astronómico
+    con influencias toltecas, famoso por sus equinoccios, el Cenote Sagrado y el gran Juego de Pelota. 
+    </p>
+  </div>
+
+  <div class="row g-4">
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card p-3">
+        <h5 class="card-title"> Significado</h5>
+        <p>"Boca del pozo de los brujos de agua", en referencia al cenote sagrado.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card p-3">
+        <h5 class="card-title">Pirámide de Kukulkán</h5>
+        <p>30 metros de altura y 365 escalones que representan el calendario anual.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card p-3">
+        <h5 class="card-title">Equinoccio</h5>
+        <p>La luz crea la ilusión de una serpiente descendiendo por la pirámide.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h5 class="card-title"> Acústica y Astronomía</h5>
+        <p>Un aplauso genera un eco similar al canto del quetzal.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h5 class="card-title"> Gran Juego de Pelota</h5>
+        <p>La cancha más grande de Mesoamérica con significado ritual.</p>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="card p-3">
+        <h5 class="card-title">Influencia Tolteca</h5>
+        <p>Visible en el Templo de los Guerreros y las serpientes emplumadas.</p>
+      </div><br>
+    </div>
+
+    <div class="col-6 text-center" style="margin: 0 auto;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIdCbgaUgW5Lpnw9vPtukA9ad_Umri8iu9CDfhdGOI9Cx0iIz-vDOizlBO&s=10" width="500" class="img-fluid rounded" alt="Chichén Itzá">
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+function buscar(event) {
+  event.preventDefault();
+
+  let texto = document.getElementById("busqueda").value.toLowerCase().trim();
+
+  if (texto === "chichén itzá" || texto === "chichen itza") {
+    window.location.href = "chichen-itza.html";
+  } else if (texto === "coliseo de roma") {
+    window.location.href = "coliseo-de-roma.html";
+  } else if (texto === "cristo redentor") {
+    window.location.href = "estatua-del-cristo-redentor.html";
+  } else if (texto === "gran muralla china") {
+    window.location.href = "gran-muralla-china.html";
+  } else if (texto === "machu picchu") {
+    window.location.href = "machu-picchu.html";
+  } else if (texto === "petra") {
+    window.location.href = "petra.html";
+  } else if (texto === "taj mahal") {
+    window.location.href = "taj-mahal.html";
+  } else {
+    alert("No se encontró la maravilla 😢");
+  }
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

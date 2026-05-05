@@ -1,0 +1,48 @@
+body {
+  background-image: url('https://www.adobe.com/es/creativecloud/photography/discover/media_11cce67f3cd23e90370d599ea2e6e728b697f9120.png?width=750&format=png&optimize=medium');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden; 
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.navbar {
+  background: linear-gradient(to right, #c5c5c5, #c5c5c5) ;
+}
+
+.navbar-brand, .nav-link {
+  color: rgb(0, 0, 0) ;
+}
+
+.navbar .btn {
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.navbar .btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+.btn-outline-success {
+  border-radius: 20px;
+}
+
+.shadow {
+  box-shadow:8px rgba(0,0,0,0.15) ;
+}

@@ -1,0 +1,54 @@
+<html >
+<head>
+  <title>Expresiones Regulares</title>
+</head>
+<body>
+
+  <div id="examples"></div>
+
+  <script>
+    const ejemplos = [
+      { regex: /^[a-z]+$/, desc: "Solo letras minúsculas" },
+      { regex: /^[A-Z]+$/, desc: "Solo letras mayúsculas" },
+      { regex: /^[1-9]+$/, desc: "Solo números del 1 al 9" },
+      { regex: /^\d{10}$/, desc: "Número de 10 dígitos" },
+      { regex: /^[a-zA-Z]{4,}[0-9]{1,}$/, desc: "Alfanumérico (al menos 4 letras y 1 número)" },
+      { regex: /^\w+@gmail\.com$/, desc: "Correo electrónico Gmail" },
+      { regex: /^https?:\/\/.+$/, desc: "URL que inicia con http o https" },
+      { regex: /^(?=.*[A-Z])(?=.*\d).{6,}$/, desc: "Contraseña con mayúscula y número" },
+      { regex: /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/, desc: "Fecha válida YYYY-MM-DD" },
+      { regex: /^\+\d{1,3}\d{10}$/, desc: "Teléfono con código país (ej: +525577565105)" }    
+    ];
+
+    const container = document.getElementById("examples");
+
+    ejemplos.forEach((ej, index) => {
+      const div = document.createElement("div");
+      div.className = "example";
+
+      div.innerHTML = `
+        <strong>${index + 1}. ${ej.desc}</strong><br>
+        <input type="text" id="input${index}" placeholder="Escribe algo">
+        <button onclick="validar(${index})">Validar</button>
+        <span id="result${index}"></span>
+      `;
+
+      container.appendChild(div);
+    });
+
+    function validar(index) {
+      const input = document.getElementById(`input${index}`).value;
+      const resultado = document.getElementById(`result${index}`);
+      const regex = ejemplos[index].regex;
+
+      if (regex.test(input)) {
+        resultado.textContent = "Válido";
+        resultado.style.color = "green";
+      } else {
+        resultado.textContent = "Inválido";
+        resultado.style.color = "purple";
+      }
+    }
+  </script>
+</body>
+</html>

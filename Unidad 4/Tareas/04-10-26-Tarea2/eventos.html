@@ -1,0 +1,73 @@
+<html>
+<head>
+  <title>Eventos</title>
+</head>
+<body>
+
+  <div class="box">
+    <button onclick="clickEvent()">Click</button>
+  </div>
+
+  <div class="box">
+    <input type="text" oninput="inputEvent(this)" placeholder="Escribe">
+  </div>
+
+  <div class="box">
+    <input type="text" onchange="changeEvent(this)" placeholder="EScribe y cambia">
+  </div>
+
+  <div class="box">
+    <form onsubmit="submitEvent(event)">
+      <input type="text" required placeholder="Formulario">
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <div class="box">
+    <button ondblclick="doubleClickEvent()">Doble Click</button>
+  </div>
+
+  <div class="box">
+    <button oncontextmenu="rightClickEvent(event)">Click derecho</button>
+  </div>
+
+  <div class="box">
+    <button oncontextmenu="leftClickEvent(event)">Click izquierdo</button>
+  </div>
+
+
+  <script>
+    function clickEvent() {
+      alert("Click activado");
+    }
+
+    function inputEvent(el) {
+      console.log("Input:", el.value);
+    }
+
+    function changeEvent(el) {
+      alert("Valor cambiado: " + el.value);
+    }
+
+    function submitEvent(e) {
+      e.preventDefault();
+      alert("Formulario enviado");
+    }
+
+    function doubleClickEvent() {
+      alert("Doble click ");
+    }
+
+    function rightClickEvent(e) {
+      e.preventDefault();
+      alert("Click derecho detectado");
+    }
+
+    function leftClickEvent(e) {
+      e.preventDefault();
+      alert("Click izquierdo detectado");
+
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(222, 149, 255);
+}
+h1 {
+    color: rgb(53, 62, 182);
+}
+p {
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+p {
+  font-size: 40px;
+}
+body {
+    background-color: rgb(222, 149, 255);
+     text-align: center;
+}
+
+img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+table {
+  border: red 5px solid;
+  
+}

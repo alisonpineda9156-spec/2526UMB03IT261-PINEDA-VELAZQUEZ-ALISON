@@ -1,0 +1,43 @@
+input:focus {
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+}
+
+input:valid {
+    border-color: rgb(16, 20, 16);
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(255, 193, 245);
+    cursor: pointer;
+}
+
+input[type="button"]:active {
+    background-color: blue;
+    color: rgb(0, 0, 0);
+}
+
+ul li:first-child {
+    color: purple;
+    font-weight: bold;
+}
+
+ul li:last-child {
+    color: green;
+}
+
+ul li:nth-child(2) {
+    background-color: #5c82ff;
+}
+
+ul li:hover {
+    color: rgb(255, 110, 231);
+}
+
+:visited {
+    color: rgb(255, 180, 17);
+}

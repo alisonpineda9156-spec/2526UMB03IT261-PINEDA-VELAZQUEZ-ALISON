@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gran Muralla China</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="gran.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-light shadow-sm">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="#">Maravillas</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="Maravillas.html">Inicio</a>
+        </li>
+      </ul>
+
+      <form class="d-flex" onsubmit="buscar(event)">
+        <input id="busqueda" class="form-control me-2" type="search" placeholder="Buscar">
+        <button class="btn btn-outline-success">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container py-5 mt-4">
+
+  <div class="text-center mb-5">
+    <h1 class="fw-bold display-4">🏛️ Gran Muralla China</h1>
+    <p class="lead">Una de las 7 Maravillas del Mundo</p>
+  </div>
+
+  <div class="card shadow mb-4 p-3">
+    <p>La Gran Muralla China es una antigua fortificación de más de 21,000 km de longitud, construida entre el siglo V a.C. y el siglo XVI d.C. 
+      para proteger la frontera norte del imperio chino de invasiones nómadas. 
+      Es el proyecto de ingeniería más grande del mundo, reconocido como Patrimonio de la Humanidad por la UNESCO desde 1987.</p>
+  </div>
+
+  <div class="row g-4">
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card p-3">
+        <h5 class="card-title"> Longitud y Materiales</h5>
+        <p> Aunque la parte más famosa es de ladrillo y piedra, construida por la dinastía Ming (1368-1644), 
+          tramos anteriores utilizaron tierra compactada, madera y piedra caliza. Su longitud oficial alcanza los 21,196 kilómetros.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card p-3">
+        <h5 class="card-title">Finalidad</h5>
+        <p>No solo fue una barrera militar de combate y defensa, sino también un sistema de vigilancia con torres para enviar señales de humo o fuego,
+          además de controlar el comercio y las migraciones.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card p-3">
+        <h5 class="card-title">Construcción</h5>
+        <p>Iniciada por Qin Shi Huang, el primer emperador, para unir fortificaciones preexistentes. Involucró a cientos de miles de trabajadores, 
+          soldados y prisioneros.</p>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="card p-3">
+        <h5 class="card-title">Estado actual</h5>
+        <p>Gran parte de la estructura se encuentra en ruinas debido a la erosión y el tiempo, 
+          con solo un porcentaje reducido restaurado y abierto al turismo.</p>
+      </div><br>
+    </div>
+    
+    <div class="col-6 text-center" style="margin: 0 auto;">
+    <img src="https://sobrehistoria.com/wp-content/uploads/2016/05/cristo-redentor-rio.jpg" class="img-fluid rounded" alt="Cristo Redentor">
+    </div>
+  </div>
+
+</div>
+
+<script>
+function buscar(event) {
+  event.preventDefault();
+
+  let texto = document.getElementById("busqueda").value.toLowerCase().trim();
+
+  if (texto === "chichén itzá" || texto === "chichen itza") {
+    window.location.href = "chichen-itza.html";
+  } else if (texto === "coliseo de roma") {
+    window.location.href = "coliseo-de-roma.html";
+  } else if (texto === "cristo redentor") {
+    window.location.href = "estatua-del-cristo-redentor.html";
+  } else if (texto === "gran muralla china") {
+    window.location.href = "gran-muralla-china.html";
+  } else if (texto === "machu picchu") {
+    window.location.href = "machu-picchu.html";
+  } else if (texto === "petra") {
+    window.location.href = "petra.html";
+  } else if (texto === "taj mahal") {
+    window.location.href = "taj-mahal.html";
+  } else {
+    alert("No se encontró la maravilla 😢");
+  }
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

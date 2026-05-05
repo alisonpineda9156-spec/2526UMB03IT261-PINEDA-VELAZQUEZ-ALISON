@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(243, 255, 191);
+}
+h1 {
+    color: rgb(145, 255, 117);
+}
+p {
+  font-family: 'fantasy', cursive, sans-serif;
+}
+p {
+  font-size: 28px;
+}
+body {
+     text-align: center;
+}
+
+img {
+  opacity: 0.5;
+  width: 200px;
+  height: 200px;
+}
+table {
+
+  background: rgb(79, 16, 255);
+}

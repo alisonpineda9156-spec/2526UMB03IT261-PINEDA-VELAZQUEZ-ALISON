@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maravillas</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="Maravillas.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-light shadow-sm">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="#">Maravillas</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="Maravillas.html">Inicio</a>
+        </li>
+      </ul>
+
+      <form class="d-flex" onsubmit="buscar(event)">
+        <input id="busqueda" class="form-control me-2" type="search" placeholder="Buscar">
+        <button class="btn btn-outline-success">Buscar</button>
+      </form>
+
+    </div>
+
+  </div>
+</nav>
+
+<div class="container py-5">
+
+  <h1 class="text-center mb-4 text-white">Las Maravillas del Mundo</h1>
+
+  <div class="row g-4">
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 shadow">
+        <img src="https://www.civitatis.com/f/mexico/riviera-maya/guia/chichen-itza.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Chichén Itzá</h5>
+          <p class="card-text">Ubicación: Yucatán, México</p>
+          <a href="chichen-itza.html" class="btn btn-primary w-100">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 shadow">
+        <img src="https://static.nationalgeographicla.com/files/styles/image_3200/public/nationalgeographic_2744183_bx.webp?w=1600&h=900" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Coliseo de Roma</h5>
+          <p class="card-text">Ubicación: Roma, Italia</p>
+          <a href="coliseo-de-roma.html" class="btn btn-primary w-100">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 shadow">
+        <img src="https://sobrehistoria.com/wp-content/uploads/2016/05/cristo-redentor-600x479.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Cristo Redentor</h5>
+          <p class="card-text">Ubicación: Río de Janeiro, Brasil</p>
+          <a href="estatua-del-cristo-redentor.html" class="btn btn-primary w-100">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 shadow">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbAwwCPDlPVFKq0v8ZmFD_GdLJys8aW3EvAqsGg9dFNnmIJQ3M3jcAdTU&s=10" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Gran Muralla China</h5>
+          <p class="card-text">Ubicación: China</p>
+          <a href="gran-muralla-china.html" class="btn btn-primary w-100">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 shadow">
+        <img src="https://www.civitatis.com/f/pois/ChIJVVVViV-abZERJxqgpA43EDo.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Machu Picchu</h5>
+          <p class="card-text">Ubicación: Perú</p>
+          <a href="machu-picchu.html" class="btn btn-primary w-100">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 shadow">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqr5ntr7F0uHABCxGmghXI0Who2aH39cvb1_GNxeFk71_yIqaSZMmRDgMG&s=10" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Petra</h5>
+          <p class="card-text">Ubicación: Jordania</p>
+          <a href="petra.html" class="btn btn-primary w-100">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 shadow">
+        <img src="https://static.nationalgeographicla.com/files/styles/image_3200/public/93080.jpg?w=1900&h=1425" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Taj Mahal</h5>
+          <p class="card-text">Ubicación: Agra, India</p>
+          <a href="taj-mahal.html" class="btn btn-primary w-100">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function buscar(event) {
+  event.preventDefault();
+
+  let texto = document.getElementById("busqueda").value.toLowerCase().trim();
+
+  if (texto === "chichén itzá" || texto === "chichen itza") {
+    window.location.href = "chichen-itza.html";
+  } else if (texto === "coliseo de roma") {
+    window.location.href = "coliseo-de-roma.html";
+  } else if (texto === "cristo redentor") {
+    window.location.href = "estatua-del-cristo-redentor.html";
+  } else if (texto === "gran muralla china") {
+    window.location.href = "gran-muralla-china.html";
+  } else if (texto === "machu picchu") {
+    window.location.href = "machu-picchu.html";
+  } else if (texto === "petra") {
+    window.location.href = "petra.html";
+  } else if (texto === "taj mahal") {
+    window.location.href = "taj-mahal.html";
+  } else {
+    alert("No se encontró la maravilla 😢");
+  }
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

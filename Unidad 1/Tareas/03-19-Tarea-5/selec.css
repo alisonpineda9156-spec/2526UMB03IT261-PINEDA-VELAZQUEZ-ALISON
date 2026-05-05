@@ -1,0 +1,27 @@
+h1 {
+  color: rgb(235, 135, 255);
+}
+button.classic {
+  background-color: rgb(255, 195, 240);
+  color: rgb(0, 0, 0);
+}
+#div-presentacion {
+  border: rgb(225, 0, 255) 5px dashed;
+  padding: 10px;
+}
+#div-padre {
+  background-color: rgb(255, 159, 159);
+}
+#div-nieto {
+  background-color: rgb(162, 209, 255);
+}
+input:focus {
+  background: rgb(255, 0, 0);
+  color: rgb(54, 255, 255);
+}
+* {
+  font-family: cursive;
+}
+p,li {
+  color: rgb(17, 0, 255);
+}

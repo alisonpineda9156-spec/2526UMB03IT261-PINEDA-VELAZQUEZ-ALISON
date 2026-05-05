@@ -1,0 +1,30 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #925bf8;
+      color: #1a1a1a;
+      text-align: center;
+    }
+
+    header {
+      padding: 15px;
+      background: #ffe1e133;
+    }
+
+    h1 {
+      margin: 40px 0 10px;
+    }
+
+    p {
+      margin: 0 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      background: #727ff0;
+      color: #000;
+      text-decoration: none;
+      border-radius: 20px;
+    }
